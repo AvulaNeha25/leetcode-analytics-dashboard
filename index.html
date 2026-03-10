@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LeetCode Analytics Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 LeetCode Analytics Dashboard</h1>
+
+<div class="search">
+
+<input id="username" placeholder="Track username">
+
+<button onclick="getStats()">Track</button>
+
+</div>
+
+<h3 id="currentUser"></h3>
+
+<div class="compare">
+
+<input id="user1" placeholder="Compare user 1">
+<input id="user2" placeholder="Compare user 2">
+
+<button onclick="compareUsers()">Compare</button>
+
+</div>
+
+<div class="stats-grid">
+
+<div class="card">
+<h3>Total</h3>
+<p id="total">0</p>
+</div>
+
+<div class="card easy">
+<h3>Easy</h3>
+<p id="easy">0</p>
+</div>
+
+<div class="card medium">
+<h3>Medium</h3>
+<p id="medium">0</p>
+</div>
+
+<div class="card hard">
+<h3>Hard</h3>
+<p id="hard">0</p>
+</div>
+
+</div>
+
+<div class="progress-section">
+
+<h2>Difficulty Progress</h2>
+
+<div class="progress-item">
+<span>Easy</span>
+<div class="progress-bar"><div id="easyBar"></div></div>
+</div>
+
+<div class="progress-item">
+<span>Medium</span>
+<div class="progress-bar"><div id="mediumBar"></div></div>
+</div>
+
+<div class="progress-item">
+<span>Hard</span>
+<div class="progress-bar"><div id="hardBar"></div></div>
+</div>
+
+</div>
+
+<div class="chart-card">
+
+<h2>Problem Difficulty Distribution</h2>
+
+<canvas id="chart"></canvas>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
